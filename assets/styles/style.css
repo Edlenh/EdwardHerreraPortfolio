@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -29,7 +29,7 @@ a:hover{
 
 .nav-list{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0;
     padding:0;
     list-style: none;
@@ -43,7 +43,7 @@ a:hover{
     .nav-list {
         flex-direction: row;
          /*flex-end pushes the content to the end of the flex box */
-        justify-content: flex-end;
+        justify-content: center;
     }
 }
 
@@ -58,6 +58,7 @@ a:hover{
     margin: auto;
     width: 350px;
     padding:3rem;
+    /*bottom only shadow*/
     box-shadow: 0 6px 4px -2px grey;
 }
 
@@ -129,6 +130,11 @@ a:hover{
     
   }
 
+  /* need to update footer moving forward, flex still not how i want it*/
+.footer{
+    min-width: 100vh;
+    flex:1;
+}
 
 .footer-container{
     display: flex;
@@ -153,6 +159,7 @@ a:hover{
     display: inline-flex;
     word-spacing: 1em;
     font-size: larger;
+    flex-wrap: wrap;
     
 }
 .footer-info li a{
@@ -164,8 +171,9 @@ a:hover{
 @media (min-width:600px){
     .footer-container li {
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
+
 }
 
 
