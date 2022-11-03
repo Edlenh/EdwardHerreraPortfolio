@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Libre Franklin', sans-serif;
     scroll-behavior: smooth;
-   
+   /* anytime you click to scroll the animation should be smooth not instant. */
 
 }
 html{
@@ -16,7 +16,7 @@ body{
   }
 
 li, a,button{
-    
+    font-size: large;
     font-weight: 600;
     color: rgb(236, 87, 102);
     text-decoration: none;
@@ -89,10 +89,10 @@ a:hover{
 
 .gallery{
     display: flex;
-    gap: 4rem;
-    width: 400px;
+    gap: 2rem;
     flex-direction: column;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
+  
 }
 
 /* setting this media query will help with mobile responsiveness */
@@ -106,7 +106,7 @@ a:hover{
 
 .gallery img{
     
-    width: 400px;
+    width: 300px;
     height: 232px;
     box-shadow: 0 6px 4px -2px grey;
     
@@ -116,6 +116,7 @@ a:hover{
     text-align: center;
 }
 
+/* everything inside the gallery parent */
 .gallery > *{
     flex-basis:100%;
 }
@@ -136,14 +137,13 @@ a:hover{
     flex-shrink: -1;
     gap:3rem;
     padding: 3rem 2rem;
-    min-width: 100rem;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(78,40,112,0), rgb(151, 25, 25));
 }
 
 .footer-info{
-    width: auto;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -152,6 +152,7 @@ a:hover{
 .footer-info li {
     display: inline-flex;
     word-spacing: 1em;
+    font-size: larger;
     
 }
 .footer-info li a{
